@@ -1,0 +1,86 @@
+Certainly! Here’s a test scenario for a web-based e-commerce application focusing on the "Add to Cart" and "Proceed to Checkout" functionalities. 
+
+### **Test Scenario: Add to Cart and Proceed to Checkout**
+
+#### **1. Test Case: Add Item to Cart (Positive Scenario)**
+
+- **Objective:** Ensure that a user can successfully add an item to the cart.
+- **Preconditions:** User is logged in and is on a product page.
+- **Steps:**
+  1. Navigate to the product page.
+  2. Select a product.
+  3. Click on the “Add to Cart” button.
+  4. Verify that a confirmation message appears (e.g., "Item added to cart").
+  5. Navigate to the cart page.
+  6. Verify that the product appears in the cart with correct details (name, quantity, price).
+- **Expected Result:** The item should be added to the cart, and the cart should display the correct product details.
+
+#### **2. Test Case: Add Item to Cart (Negative Scenario)**
+
+- **Objective:** Ensure that the system handles errors when adding an item to the cart.
+- **Preconditions:** User is logged in and is on a product page.
+- **Steps:**
+  1. Navigate to the product page.
+  2. Select a product that is out of stock.
+  3. Click on the “Add to Cart” button.
+  4. Verify that an error message appears (e.g., "Item out of stock").
+- **Expected Result:** The system should prevent the item from being added to the cart and show an appropriate error message.
+
+#### **3. Test Case: Proceed to Checkout (Positive Scenario)**
+
+- **Objective:** Ensure that a user can successfully proceed to checkout from the cart.
+- **Preconditions:** User is logged in and has items in the cart.
+- **Steps:**
+  1. Navigate to the cart page.
+  2. Verify that the cart contains the correct items.
+  3. Click on the “Proceed to Checkout” button.
+  4. Verify that the user is redirected to the checkout page.
+  5. Verify that the checkout page displays the correct items and totals.
+- **Expected Result:** User should be redirected to the checkout page with the correct item details and totals displayed.
+
+#### **4. Test Case: Proceed to Checkout (Negative Scenario)**
+
+- **Objective:** Ensure that the system handles errors or invalid states when proceeding to checkout.
+- **Preconditions:** User is logged in and the cart is empty.
+- **Steps:**
+  1. Navigate to the cart page.
+  2. Verify that the cart is empty.
+  3. Click on the “Proceed to Checkout” button.
+  4. Verify that an error message or notification is shown (e.g., "Your cart is empty").
+- **Expected Result:** The system should prevent the user from proceeding to checkout and display an appropriate message indicating the cart is empty.
+
+#### **5. Test Case: Add Multiple Quantities to Cart (Positive Scenario)**
+
+- **Objective:** Ensure that a user can add multiple quantities of an item to the cart.
+- **Preconditions:** User is logged in and is on a product page.
+- **Steps:**
+  1. Navigate to the product page.
+  2. Select a product.
+  3. Choose a quantity greater than 1.
+  4. Click on the “Add to Cart” button.
+  5. Navigate to the cart page.
+  6. Verify that the cart displays the correct quantity of the item.
+- **Expected Result:** The cart should reflect the correct quantity of the item as selected by the user.
+
+#### **6. Test Case: Apply Discount Code at Checkout (Positive Scenario)**
+
+- **Objective:** Ensure that a discount code is applied correctly at checkout.
+- **Preconditions:** User is logged in and has items in the cart.
+- **Steps:**
+  1. Navigate to the cart page and proceed to checkout.
+  2. Enter a valid discount code in the discount code field.
+  3. Click on the “Apply” button.
+  4. Verify that the discount is applied and the total amount is updated correctly.
+- **Expected Result:** The discount should be applied successfully, and the total amount should be reduced according to the discount code.
+
+#### **7. Test Case: Apply Invalid Discount Code at Checkout (Negative Scenario)**
+
+- **Objective:** Ensure that the system handles invalid discount codes appropriately.
+- **Preconditions:** User is logged in and has items in the cart.
+- **Steps:**
+  1. Navigate to the cart page and proceed to checkout.
+  2. Enter an invalid or expired discount code in the discount code field.
+  3. Click on the “Apply” button.
+  4. Verify that an error message appears (e.g., "Invalid discount code").
+- **Expected Result:** The system should not apply the discount and should display an appropriate error message.
+

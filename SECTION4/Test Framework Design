@@ -1,0 +1,28 @@
+test_automation_framework/
+│
+├── tests/
+│   ├── test_login.py
+│   ├── test_signup.py
+│
+├── pages/
+│   ├── login_page.py
+│   ├── signup_page.py
+│
+├── data/
+│   ├── test_data.json
+│
+├── reports/
+│   └── test_report.html
+│
+├── utils/
+│   ├── browser_setup.py
+│   ├── data_loader.py
+│
+├── requirements.txt
+├── config.json
+└── README.md
+
+KEY COMPONENTS.
+Test Data Management - Store test data in a structured format (JSON, CSV, etc.) that can be easily accessed by test cases.
+Page Object Model (POM) - Encapsulate the UI elements and interactions for each page in separate classes, making tests easier to read and maintain.
+Reporting - Generate and store test execution reports.

@@ -1,0 +1,18 @@
+#Retrieve All Users Who Registered in the Last 30 Days:
+
+SELECT * FROM Users
+WHERE CreatedDate >= CURDATE() - INTERVAL 30 DAY;
+
+#Find the Total Number of Users with a Specific Domain in Their Email:
+
+SELECT COUNT(*) AS UserCount
+FROM Users
+WHERE Email LIKE '%@example.com';
+
+
+#Update the Email of a User with a Specific UserId:
+
+UPDATE Users
+SET Email = 'newemail@example.com'
+WHERE UserId = 1;
+
